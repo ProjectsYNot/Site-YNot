@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Y-Not – Fais du sport avec d'autres près de chez toi</title>
+    <meta
+      name="description"
+      content="Y-Not rassemble les sportifs autour d'activités proches de chez eux. Découvre, rejoins ou crée une sortie en quelques secondes."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ asset('ynot.css') }}" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="wrap nav">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="wordmark"><span>Y</span>-Not</div>
+        </div>
+
+        <nav class="nav-links" aria-label="navigation principale">
+          <a href="#features">Fonctionnalités</a>
+          <a href="#decouvrir">Activités</a>
+          <a href="#Télécharger" class="btn btn-primary">Télécharger l'app</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <!-- decorative blobs -->
+      <svg
+        class="blob"
+        viewBox="0 0 600 600"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="var(--yn-orange-2)" />
+            <stop offset="100%" stop-color="var(--yn-orange-3)" />
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#g1)"
+          d="M459.9,323.8Q434,407.6,353.6,463.2Q273.2,518.8,198.6,459.4Q124,400,96.9,316.2Q69.8,232.3,142.9,181.9Q216.1,131.5,302.2,105.9Q388.3,80.2,445.6,145.1Q502.9,210,459.9,323.8Z"
+        />
+      </svg>
+
+      <svg
+        class="blob-2"
+        viewBox="0 0 700 700"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          fill="#FFD6C9"
+          d="M551.7,347.4Q532.8,444.8,444.1,485.7Q355.5,526.7,269.2,486.5Q182.8,446.3,152.8,369.4Q122.9,292.6,171.3,222.2Q219.7,151.9,300.2,128.5Q380.6,105,458.2,149.2Q535.8,193.3,554.9,271.6Q574,349.9,551.7,347.4Z"
+        />
+      </svg>
+
+      <div class="wrap">
+        <div>
+          <div class="kicker">rassemblement sportif • près de chez toi</div>
+
+          <h1>
+            Fais du sport avec <br />
+            les bonnes personnes
+          </h1>
+
+          <p class="sub">
+            Y-Not te connecte aux sorties sportives autour de toi. Explore,
+            rejoins ou crée une activité. Du badminton au trail, entre amis ou
+            inconnu.
+          </p>
+
+          <div class="cta-group">
+            <a href="#cta" class="btn btn-primary">Télécharger l'app</a>
+            <a href="#decouvrir" class="btn btn-ghost">Voir les activités</a>
+          </div>
+
+          <div class="badgebar" aria-label="sports populaires">
+            <span class="badge">Tennis</span>
+            <span class="badge">Bowling</span>
+            <span class="badge">Squash</span>
+            <span class="badge">Padel</span>
+            <span class="badge">Escalade</span>
+            <span class="badge">BasketBall</span>
+            <span class="badge">HandBall</span>
+            <span class="badge">Rudby</span>
+            <span class="badge">BaseBall</span>
+            <span class="badge">DodgeBall</span>
+            <span class="badge">Foot</span>
+          </div>
+        </div>
+
+        <div aria-hidden="true">
+          <div class="phone-mock">
+            <div class="phone-mock-inner">
+              <div class="phone-mock-header">Sélection pour vous</div>
+
+              <div class="phone-mock-body">
+                <div class="phone-mock-search-row">
+                  <div class="phone-mock-search-input">Recherche d'activité</div>
+                  <div class="phone-mock-search-icon"></div>
+                </div>
+
+                <div class="phone-mock-cards">
+                  <div class="card">
+                    <div
+                      class="cover"
+                      style="background-image:url('https://images.unsplash.com/flagged/photo-1576972405668-2d020a01cbfa?q=80&w=1748&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                    ></div>
+                    <div class="body">
+                      <strong>Tennis</strong>
+                      <div class="pillbar">
+                        <span class="pill">Aix-en-Provence</span>
+                        <span class="pill">3/4 pers</span>
+                      </div>
+                    </div>
+                    <div class="cta-row">
+                      <div class="btn btn-ghost phone-mock-btn">
+                        Savoir plus
+                      </div>
+                      <div class="btn btn-primary phone-mock-btn">
+                        Participer
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div
+                      class="cover"
+                      style="background-image:url('https://images.unsplash.com/photo-1463411563105-157075b06f96?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                    ></div>
+                    <div class="body">
+                      <strong>Bowling</strong>
+                      <div class="pillbar">
+                        <span class="pill">Salon</span>
+                        <span class="pill">4/6 pers</span>
+                      </div>
+                    </div>
+                    <div class="cta-row">
+                      <div class="btn btn-ghost phone-mock-btn">
+                        Savoir plus
+                      </div>
+                      <div class="btn btn-primary phone-mock-btn">
+                        Participer
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discover rail -->
+    <section class="rail" id="decouvrir">
+
+      <div class="wrap">
+        <div class="rail-head">
+          <div class="rail-title">Activités préférées des Utilisateurs</div>
+        </div>
+
+        <div class="cards" aria-label="carrousel d'activités">
+          <!-- 1 : Soirée Bar -->
+          <article class="card" role="group" aria-roledescription="carte activité">
+            <div
+              class="cover"
+              style="background-image:url('https://images.unsplash.com/photo-1575037614876-c38a4d44f5b8?fm=jpg&q=80&w=1500')"
+            ></div>
+            <div class="body">
+              <strong>Soirée Bar</strong>
+              <span class="pill"
+                >Ville la plus active : Aix-en-Provence</span
+              >
+              <span class="pill"
+                >Nombre d'activités le mois dernier : 12</span
+              >
+            </div>
+            <div class="cta-row">
+              <a class="btn btn-ghost" href="#">Savoir plus</a>
+              <a class="btn btn-primary" href="#">Participer</a>
+            </div>
+          </article>
+
+          <!-- 2 : Foot -->
+          <article class="card">
+            <div
+              class="cover"
+              style="background-image:url('https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+            ></div>
+            <div class="body">
+              <strong>Foot</strong>
+              <span class="pill"
+                >Ville la plus active : Marseille</span
+              >
+              <span class="pill"
+                >Nombre d'activités le mois dernier : 8</span
+              >
+            </div>
+            <div class="cta-row">
+              <a class="btn btn-ghost" href="#">Savoir plus</a>
+              <a class="btn btn-primary" href="#">Participer</a>
+            </div>
+          </article>
+
+          <!-- 3 : Volley-ball -->
+          <article class="card">
+            <div
+              class="cover"
+              style="background-image:url('https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?fm=jpg&q=80&w=1500')"
+            ></div>
+            <div class="body">
+              <strong>Volley-ball</strong>
+              <span class="pill"
+                >Ville la plus active : Gardanne</span
+              >
+              <span class="pill"
+                >Nombre d'activités le mois dernier : 5</span
+              >
+            </div>
+            <div class="cta-row">
+              <a class="btn btn-ghost" href="#">Savoir plus</a>
+              <a class="btn btn-primary" href="#">Participer</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="wrap">
+        <h2 class="section-title">Pourquoi Y-Not ?</h2>
+
+        <div class="grid">
+          <div class="f">
+            <h3>Pour toi</h3>
+            <p>
+              Un flux personnalisé selon tes sports, ton niveau et la distance.
+              Pas de bruit inutile !
+            </p>
+          </div>
+
+          <div class="f">
+            <h3>Rejoins en un clic</h3>
+            <p>
+              Appuie sur <strong>Participer</strong>, L’hôte valide ta demande,
+              puis tu accèdes directement au groupe.
+            </p>
+          </div>
+
+          <div class="f">
+            <h3>Crée une sortie</h3>
+            <p>
+              Publie une activité avec lieu, niveau sportifs (si besoin) et
+              nombre de personnes.
+            </p>
+          </div>
+
+          <div class="f">
+            <h3>Confiance</h3>
+            <p>
+              Profils notés, signalements et vérifications basiques pour éviter
+              les surprises.
+            </p>
+          </div>
+
+          <div class="f">
+            <h3>Groupes</h3>
+            <p>
+              Rejoins des clubs et des communautés locales. Notifs ciblées.
+            </p>
+          </div>
+
+          <div class="f">
+            <h3>Multisport</h3>
+            <p>
+              Badminton, padel, running, rando, basket, volley… Ajoute tes
+              favoris.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="wrap" id="cta" style="margin-bottom:40px">
+
+      <div class="cta">
+        <div>
+          <div class="kicker">reste informé</div>
+          <h2
+            style="font-family:'Baloo 2';font-size:34px;margin:6px 0 10px"
+          >
+            Reçois les nouveautés Y-Not
+          </h2>
+          <p class="sub" style="margin:0 0 16px">
+            Entre ton email pour recevoir nos annonces, nouvelles activités et
+            améliorations de l’application.
+          </p>
+
+          <form
+            onsubmit="event.preventDefault(); this.querySelector('button').innerText='Inscrit !';"
+            aria-label="newsletter"
+          >
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <input
+                required
+                type="email"
+                placeholder="ton@email"
+                aria-label="Email"
+                style="flex:1;min-width:220px;padding:14px 16px;border-radius:14px;border:1px solid #ddd;outline-color:var(--yn-orange)"
+              />
+              <button class="btn btn-primary" type="submit">
+                S’inscrire
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <div
+            style="width:420px;max-width:100%;margin:0 auto;background:#111;border-radius:30px;padding:16px 12px 22px;box-shadow:var(--shadow)"
+          >
+            <div
+              style="background:var(--yn-cream);border-radius:22px;overflow:hidden;border:6px solid #111"
+            >
+              <div
+                style="height:96px;display:flex;align-items:center;justify-content:center;color:#fff;background:linear-gradient(135deg,var(--yn-orange-2),var(--yn-orange-3));font-family:'Baloo 2';font-size:30px"
+              >
+                Newsletter
+              </div>
+              <div
+                style="padding:16px 16px 22px;color:#555;font-size:14px;text-align:center"
+              >
+                Reste informé des prochaines sorties, fonctionnalités et mises à
+                jour Y-Not.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="wrap foot">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="wordmark"><span>Y</span>-Not</div>
+        </div>
+
+        <small>
+          © <span id="y"></span> Y-Not. Tous droits réservés •
+          <a href="#">Confidentialité</a> •
+          <a href="#">Conditions</a>
+        </small>
+      </div>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById('y');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          const isHidden = getComputedStyle(navLinks).display === 'none';
+          navLinks.style.display = isHidden ? 'flex' : 'none';
+        });
+      }
+    </script>
+  </body>
+</html>

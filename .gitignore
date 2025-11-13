@@ -18,3 +18,7 @@
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+### pur chaos ###
+templates/.DS_Store
+/.DS_Store
