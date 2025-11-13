@@ -697,3 +697,7 @@ footer {
     display: none;
   }
 }
+    <script src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="{{ asset('ynot.js') }}"></script>
+  </body>
+</html>
