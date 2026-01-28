@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{ asset('ynot.css') }}" />
+    <link rel="stylesheet" href="{{ asset('style.css') }}" />
   </head>
 
   <body>
@@ -96,7 +96,7 @@
             <span class="badge">Escalade</span>
             <span class="badge">BasketBall</span>
             <span class="badge">HandBall</span>
-            <span class="badge">Rudby</span>
+            <span class="badge">Rugby</span>
             <span class="badge">BaseBall</span>
             <span class="badge">DodgeBall</span>
             <span class="badge">Foot</span>
@@ -140,7 +140,7 @@
                   <div class="card">
                     <div
                       class="cover"
-                      style="background-image:url('https://images.unsplash.com/photo-1463411563105-157075b06f96?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                      style="background-image:url('https://images.unsplash.com/photo-1463411563105-157075b06f96?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
                     ></div>
                     <div class="body">
                       <strong>Bowling</strong>
@@ -168,7 +168,6 @@
 
     <!-- Discover rail -->
     <section class="rail" id="decouvrir">
-
       <div class="wrap">
         <div class="rail-head">
           <div class="rail-title">Activités préférées des Utilisateurs</div>
@@ -183,12 +182,8 @@
             ></div>
             <div class="body">
               <strong>Soirée Bar</strong>
-              <span class="pill"
-                >Ville la plus active : Aix-en-Provence</span
-              >
-              <span class="pill"
-                >Nombre d'activités le mois dernier : 12</span
-              >
+              <span class="pill">Ville la plus active : Aix-en-Provence</span>
+              <span class="pill">Nombre d'activités le mois dernier : 12</span>
             </div>
             <div class="cta-row">
               <a class="btn btn-ghost" href="#">Savoir plus</a>
@@ -204,12 +199,8 @@
             ></div>
             <div class="body">
               <strong>Foot</strong>
-              <span class="pill"
-                >Ville la plus active : Marseille</span
-              >
-              <span class="pill"
-                >Nombre d'activités le mois dernier : 8</span
-              >
+              <span class="pill">Ville la plus active : Marseille</span>
+              <span class="pill">Nombre d'activités le mois dernier : 8</span>
             </div>
             <div class="cta-row">
               <a class="btn btn-ghost" href="#">Savoir plus</a>
@@ -225,12 +216,8 @@
             ></div>
             <div class="body">
               <strong>Volley-ball</strong>
-              <span class="pill"
-                >Ville la plus active : Gardanne</span
-              >
-              <span class="pill"
-                >Nombre d'activités le mois dernier : 5</span
-              >
+              <span class="pill">Ville la plus active : Gardanne</span>
+              <span class="pill">Nombre d'activités le mois dernier : 5</span>
             </div>
             <div class="cta-row">
               <a class="btn btn-ghost" href="#">Savoir plus</a>
@@ -297,56 +284,46 @@
       </div>
     </section>
 
-    <!-- Newsletter CTA -->
-    <section class="wrap" id="cta" style="margin-bottom:40px">
 
+
+    <!-- Newsletter CTA -->
+    <section class="wrap cta-section" id="cta">
       <div class="cta">
         <div>
           <div class="kicker">reste informé</div>
-          <h2
-            style="font-family:'Baloo 2';font-size:34px;margin:6px 0 10px"
-          >
+
+          <h2 class="section-title section-title--cta">
             Reçois les nouveautés Y-Not
           </h2>
-          <p class="sub" style="margin:0 0 16px">
+
+          <p class="sub cta-sub">
             Entre ton email pour recevoir nos annonces, nouvelles activités et
             améliorations de l’application.
           </p>
 
           <form
+            class="cta-form"
             onsubmit="event.preventDefault(); this.querySelector('button').innerText='Inscrit !';"
             aria-label="newsletter"
           >
-            <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <div class="cta-form-row">
               <input
+                class="cta-email-input"
                 required
                 type="email"
                 placeholder="ton@email"
                 aria-label="Email"
-                style="flex:1;min-width:220px;padding:14px 16px;border-radius:14px;border:1px solid #ddd;outline-color:var(--yn-orange)"
               />
-              <button class="btn btn-primary" type="submit">
-                S’inscrire
-              </button>
+              <button class="btn btn-primary" type="submit">S’inscrire</button>
             </div>
           </form>
         </div>
 
         <div>
-          <div
-            style="width:420px;max-width:100%;margin:0 auto;background:#111;border-radius:30px;padding:16px 12px 22px;box-shadow:var(--shadow)"
-          >
-            <div
-              style="background:var(--yn-cream);border-radius:22px;overflow:hidden;border:6px solid #111"
-            >
-              <div
-                style="height:96px;display:flex;align-items:center;justify-content:center;color:#fff;background:linear-gradient(135deg,var(--yn-orange-2),var(--yn-orange-3));font-family:'Baloo 2';font-size:30px"
-              >
-                Newsletter
-              </div>
-              <div
-                style="padding:16px 16px 22px;color:#555;font-size:14px;text-align:center"
-              >
+          <div class="device-preview">
+            <div class="device-preview-inner">
+              <div class="device-preview-header">Newsletter</div>
+              <div class="device-preview-body device-preview-body--center">
                 Reste informé des prochaines sorties, fonctionnalités et mises à
                 jour Y-Not.
               </div>
@@ -355,6 +332,8 @@
         </div>
       </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer>
@@ -371,6 +350,8 @@
         </small>
       </div>
     </footer>
+
+
 
     <script>
       const yearEl = document.getElementById('y');
