@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Y-Not – Fais du sport avec d'autres près de chez toi</title>
+    <title>Onygo – Fais du sport avec d'autres près de chez toi</title>
     <meta
       name="description"
-      content="Y-Not rassemble les sportifs autour d'activités proches de chez eux. Découvre, rejoins ou crée une sortie en quelques secondes."
+      content="Onygo rassemble les sportifs autour d'activités proches de chez eux. Découvre, rejoins ou crée une sortie en quelques secondes."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,19 +18,20 @@
     <link rel="stylesheet" href="{{ asset('style.css') }}" />
   </head>
 
-  <body>
+  <body id="top">
     <!-- Header -->
     <header>
       <div class="wrap nav">
-        <div class="brand">
+        <a class="brand" href="#top">
           <div class="logo" aria-hidden="true"></div>
-          <div class="wordmark"><span>Y</span>-Not</div>
-        </div>
+          <div class="wordmark">Onygo</div>
+        </a>
 
         <nav class="nav-links" aria-label="navigation principale">
           <a href="#features">Fonctionnalités</a>
           <a href="#decouvrir">Activités</a>
-          <a href="#Télécharger" class="btn btn-primary">Télécharger l'app</a>
+          <a href="{{ path('site_team') }}">Équipe</a>
+          <a href="https://epsteinexposed.com/" class="btn btn-primary">Télécharger l'app</a>
         </nav>
       </div>
     </header>
@@ -78,13 +79,13 @@
           </h1>
 
           <p class="sub">
-            Y-Not te connecte aux sorties sportives autour de toi. Explore,
+            Onygo te connecte aux sorties sportives autour de toi. Explore,
             rejoins ou crée une activité. Du badminton au trail, entre amis ou
             inconnu.
           </p>
 
           <div class="cta-group">
-            <a href="#cta" class="btn btn-primary">Télécharger l'app</a>
+            <a href="https://epsteinexposed.com/" class="btn btn-primary">Télécharger l'app</a>
             <a href="#decouvrir" class="btn btn-ghost">Voir les activités</a>
           </div>
 
@@ -231,7 +232,7 @@
     <!-- Features -->
     <section class="features" id="features">
       <div class="wrap">
-        <h2 class="section-title">Pourquoi Y-Not ?</h2>
+        <h2 class="section-title">Pourquoi Onygo ?</h2>
 
         <div class="grid">
           <div class="f">
@@ -293,7 +294,7 @@
           <div class="kicker">reste informé</div>
 
           <h2 class="section-title section-title--cta">
-            Reçois les nouveautés Y-Not
+            Reçois les nouveautés Onygo
           </h2>
 
           <p class="sub cta-sub">
@@ -325,7 +326,7 @@
               <div class="device-preview-header">Newsletter</div>
               <div class="device-preview-body device-preview-body--center">
                 Reste informé des prochaines sorties, fonctionnalités et mises à
-                jour Y-Not.
+                jour Onygo.
               </div>
             </div>
           </div>
@@ -340,11 +341,11 @@
       <div class="wrap foot">
         <div class="brand">
           <div class="logo" aria-hidden="true"></div>
-          <div class="wordmark"><span>Y</span>-Not</div>
+          <div class="wordmark">Onygo</div>
         </div>
 
         <small>
-          © <span id="y"></span> Y-Not. Tous droits réservés •
+          © <span id="y"></span> Onygo. Tous droits réservés •
           <a href="#">Confidentialité</a> •
           <a href="#">Conditions</a>
         </small>

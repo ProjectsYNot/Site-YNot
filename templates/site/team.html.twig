@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Onygo - Notre équipe</title>
+    <meta
+      name="description"
+      content="Découvre l'équipe Onygo derrière le site vitrine et le projet."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ asset('style.css') }}" />
+
+    <style>
+      body {
+        position: relative;
+        background: #f3f3f3;
+      }
+
+      .bubbles {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        overflow: hidden;
+      }
+
+      .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.85), rgba(233, 85, 46, 0.18));
+        animation: float 11s ease-in-out infinite;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+      }
+
+      .bubble.b1 { width: 180px; height: 180px; left: 4%; top: 18%; }
+      .bubble.b2 { width: 120px; height: 120px; right: 10%; top: 26%; animation-delay: 1.5s; }
+      .bubble.b3 { width: 220px; height: 220px; right: 6%; bottom: 10%; animation-delay: 2.3s; }
+      .bubble.b4 { width: 90px; height: 90px; left: 20%; bottom: 14%; animation-delay: 3.1s; }
+
+      @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-16px); }
+        100% { transform: translateY(0); }
+      }
+
+      .team-hero {
+        padding: 84px 0 46px;
+        background: transparent;
+        border-bottom: 0;
+      }
+
+      .hero-inner {
+        max-width: 760px;
+      }
+
+      .team-hero h1 {
+        margin: 8px 0 8px;
+        font-family: "Baloo 2", system-ui;
+      }
+
+      .hero-sub {
+        margin: 0;
+        font-size: 18px;
+        color: #5e5e5e;
+      }
+
+      .team-section {
+        padding: 34px 0 30px;
+      }
+
+      .team-category {
+        margin-bottom: 54px;
+      }
+
+      .team-category h2 {
+        font-size: 34px;
+        margin: 0 0 18px;
+        text-align: center;
+        font-family: "Baloo 2", system-ui;
+      }
+
+      .team-category .team-separator {
+        width: min(760px, 92%);
+        height: 1px;
+        background: #7a7a7a;
+        margin: 0 auto 30px;
+      }
+
+      .team-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 26px 34px;
+      }
+
+      .member-card {
+        width: 220px;
+        text-align: center;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      .member-photo {
+        width: 170px;
+        height: 170px;
+        border-radius: 999px;
+        object-fit: cover;
+        margin: 0 auto 12px;
+      }
+
+      .member-placeholder {
+        width: 170px;
+        height: 170px;
+        border-radius: 999px;
+        margin: 0 auto 12px;
+        background: linear-gradient(135deg, rgba(233, 85, 46, 0.24), rgba(255, 122, 69, 0.32));
+      }
+
+      .member-name {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.15;
+        font-family: "Baloo 2", system-ui;
+        white-space: nowrap;
+      }
+
+      .member-role {
+        margin: 4px 0 0;
+        color: #4f4f4f;
+        font-size: 16px;
+      }
+
+      @media (max-width: 980px) {
+        .member-name { font-size: 26px; }
+      }
+
+      @media (max-width: 640px) {
+        .member-name { font-size: 22px; }
+      }
+    </style>
+  </head>
+
+  <body id="top">
+    <div class="bubbles" aria-hidden="true">
+      <span class="bubble b1"></span>
+      <span class="bubble b2"></span>
+      <span class="bubble b3"></span>
+      <span class="bubble b4"></span>
+    </div>
+
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="{{ path('site_index') }}#top">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="wordmark">Onygo</div>
+        </a>
+
+        <nav class="nav-links" aria-label="navigation principale">
+          <a href="{{ path('site_index') }}#features">Fonctionnalités</a>
+          <a href="{{ path('site_index') }}#decouvrir">Activités</a>
+          <a href="{{ path('site_team') }}">Équipe</a>
+          <a href="https://epsteinexposed.com/" class="btn btn-primary">Télécharger l'app</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="team-hero">
+      <div class="wrap hero-inner">
+        <div class="kicker">onygo team</div>
+        <h1>Notre équipe</h1>
+        <p class="hero-sub">
+          Une équipe engagée qui conçoit Onygo pour rendre le sport plus simple,
+          social et accessible.
+        </p>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="wrap">
+        <div class="team-category">
+          <h2>Responsable projet</h2>
+          <div class="team-separator"></div>
+          <div class="team-grid">
+            <article class="member-card">
+              <img class="member-photo" src="{{ asset('nathan.png') }}" alt="Photo de Marroc Nathan" />
+              <h3 class="member-name">Marroc Nathan</h3>
+              <p class="member-role">Responsable projet</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="team-category">
+          <h2>Team de dev</h2>
+          <div class="team-separator"></div>
+          <div class="team-grid">
+            <article class="member-card">
+              <img class="member-photo" src="{{ asset('killian.png') }}" alt="Photo de Dubun Killian" />
+              <h3 class="member-name">Dubun Killian</h3>
+              <p class="member-role">Développement full-stack</p>
+            </article>
+
+            <article class="member-card">
+              <img class="member-photo" src="{{ asset('andreas.png') }}" alt="Photo de Vonfeld Andreas" />
+              <h3 class="member-name">Vonfeld Andreas</h3>
+              <p class="member-role">Développement full-stack</p>
+            </article>
+
+            <article class="member-card">
+              <img class="member-photo" src="{{ asset('teo.png') }}" alt="Photo de Merry Teo" />
+              <h3 class="member-name">Merry Teo</h3>
+              <p class="member-role">UX / UI design</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="team-category">
+          <h2>Marketing et communication</h2>
+          <div class="team-separator"></div>
+          <div class="team-grid">
+            <article class="member-card">
+              <img class="member-photo" src="{{ asset('arwen.png') }}" alt="Photo de GOLETTO Lucas" />
+              <h3 class="member-name">GOLETTO Lucas</h3>
+              <p class="member-role">Marketing & communication</p>
+            </article>
+
+            <article class="member-card">
+              <img class="member-photo" src="{{ asset('florian.png') }}" alt="Photo de BRANCATTO Florian" />
+              <h3 class="member-name">BRANCATTO Florian</h3>
+              <p class="member-role">Marketing & communication</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="team-category">
+          <h2>Team audiovisuel</h2>
+          <div class="team-separator"></div>
+          <div class="team-grid">
+            <article class="member-card">
+              <img class="member-photo" src="{{ asset('romain.png') }}" alt="Photo de CARBILLON Romain" />
+              <h3 class="member-name">CARBILLON Romain</h3>
+              <p class="member-role">Audiovisuel</p>
+            </article>
+
+            <article class="member-card">
+              <img class="member-photo" src="{{ asset('lucas.png') }}" alt="Photo de BAUDE Arwen" />
+              <h3 class="member-name">BAUDE Arwen</h3>
+              <p class="member-role">Audiovisuel</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap foot">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="wordmark">Onygo</div>
+        </div>
+
+        <small>
+          © {{ "now"|date("Y") }} Onygo. Tous droits réservés •
+          <a href="#">Confidentialité</a> •
+          <a href="#">Conditions</a>
+        </small>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        if (typeof anime === 'undefined') return;
+
+        anime.timeline({
+          easing: 'easeOutQuad',
+          duration: 700
+        })
+          .add({
+            targets: '.logo',
+            scale: [0.6, 1],
+            opacity: [0, 1],
+            rotate: [-10, 0]
+          })
+          .add({
+            targets: '.team-hero .kicker',
+            translateY: [14, 0],
+            opacity: [0, 1]
+          }, '-=420')
+          .add({
+            targets: '.team-hero h1',
+            translateY: [20, 0],
+            opacity: [0, 1]
+          }, '-=420')
+          .add({
+            targets: '.hero-sub',
+            translateY: [10, 0],
+            opacity: [0, 1]
+          }, '-=450');
+
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+
+            anime({
+              targets: entry.target.querySelectorAll('h2, .team-separator, .member-card'),
+              opacity: [0, 1],
+              translateY: [22, 0],
+              duration: 550,
+              delay: anime.stagger(90),
+              easing: 'easeOutQuad'
+            });
+
+            obs.unobserve(entry.target);
+          });
+        }, { threshold: 0.18 });
+
+        document.querySelectorAll('.team-category').forEach(el => observer.observe(el));
+      });
+    </script>
+  </body>
+</html>
