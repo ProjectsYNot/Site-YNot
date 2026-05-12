@@ -57,7 +57,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
+  min-height: 64px;
+  padding: 4px 0;
 }
 
 .brand {
@@ -65,23 +66,32 @@ header {
   align-items: center;
   gap: 12px;
   font-weight: 800;
+  flex-shrink: 0;
 }
 
 .logo {
-  position: relative;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: radial-gradient(120% 120% at 10% 10%, var(--yn-orange-2), var(--yn-orange-3));
-  box-shadow: var(--shadow-soft);
+  width: 320px;
+  height: auto;
+  max-width: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.logo::after {
-  content: "";
-  position: absolute;
-  inset: 6px;
-  border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, .7);
+header .brand {
+  display: block;
+  width: 110px !important;
+  min-width: 110px;
+}
+
+header .brand .logo {
+  display: block;
+  width: 110px !important;
+  max-width: 110px !important;
+  height: auto !important;
+}
+
+.foot .logo {
+  width: 90px;
 }
 
 .wordmark {
@@ -93,7 +103,7 @@ header {
 
 .wordmark span { color: var(--yn-orange); }
 
-.nav a {
+.nav-links a {
   padding: 10px 14px;
   border-radius: 12px;
 }
@@ -528,7 +538,7 @@ h1 {
    ========================= */
 
 footer {
-  margin-top: 56px;
+  margin-top: 36px;
   background: #fff;
   border-top: 1px solid #ececec;
 }
@@ -536,12 +546,17 @@ footer {
 .foot {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 10px;
   align-items: center;
-  height: 90px;
+  height: 64px;
+  max-width: 820px;
+  margin: 0 auto;
 }
 
-.foot small { color: #777; }
+.foot small {
+  color: #777;
+  font-size: 13px;
+}
 
 /* =========================
    Responsive
@@ -557,6 +572,15 @@ footer {
 
 @media (max-width: 640px) {
   h1 { font-size: 40px; }
+  .logo { width: 240px; }
+  header .brand {
+    width: 90px !important;
+    min-width: 90px;
+  }
+  header .brand .logo {
+    width: 90px !important;
+    max-width: 90px !important;
+  }
   .cards { grid-auto-columns: 85%; }
   .grid { grid-template-columns: 1fr; }
   .menu { display: inline-flex; }

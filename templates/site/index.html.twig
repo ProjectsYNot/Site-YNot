@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Onygo – Fais du sport avec d'autres près de chez toi</title>
+    <title>Ynot – Fais du sport avec d'autres près de chez toi</title>
     <meta
       name="description"
-      content="Onygo rassemble les sportifs autour d'activités proches de chez eux. Découvre, rejoins ou crée une sortie en quelques secondes."
+      content="Ynot rassemble les sportifs autour d'activités proches de chez eux. Découvre, rejoins ou crée une sortie en quelques secondes."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{ asset('style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('style.css') }}?v=20260512-3" />
   </head>
 
   <body id="top">
@@ -23,15 +23,14 @@
     <header>
       <div class="wrap nav">
         <a class="brand" href="#top">
-          <div class="logo" aria-hidden="true"></div>
-          <div class="wordmark">Onygo</div>
+          <img class="logo" src="{{ asset('ynot-logo.png') }}?v=20260512-2" alt="Logo Ynot" />
         </a>
 
         <nav class="nav-links" aria-label="navigation principale">
           <a href="#features">Fonctionnalités</a>
           <a href="#decouvrir">Activités</a>
           <a href="{{ path('site_team') }}">Équipe</a>
-          <a href="https://epsteinexposed.com/" class="btn btn-primary">Télécharger l'app</a>
+          <a href="{{ path('site_beta') }}" class="btn btn-primary">Télécharger l'app</a>
         </nav>
       </div>
     </header>
@@ -79,13 +78,13 @@
           </h1>
 
           <p class="sub">
-            Onygo te connecte aux sorties sportives autour de toi. Explore,
+            Ynot te connecte aux sorties sportives autour de toi. Explore,
             rejoins ou crée une activité. Du badminton au trail, entre amis ou
             inconnu.
           </p>
 
           <div class="cta-group">
-            <a href="https://epsteinexposed.com/" class="btn btn-primary">Télécharger l'app</a>
+            <a href="{{ path('site_beta') }}" class="btn btn-primary">Télécharger l'app</a>
             <a href="#decouvrir" class="btn btn-ghost">Voir les activités</a>
           </div>
 
@@ -232,7 +231,7 @@
     <!-- Features -->
     <section class="features" id="features">
       <div class="wrap">
-        <h2 class="section-title">Pourquoi Onygo ?</h2>
+        <h2 class="section-title">Pourquoi Ynot ?</h2>
 
         <div class="grid">
           <div class="f">
@@ -294,7 +293,7 @@
           <div class="kicker">reste informé</div>
 
           <h2 class="section-title section-title--cta">
-            Reçois les nouveautés Onygo
+            Reçois les nouveautés Ynot
           </h2>
 
           <p class="sub cta-sub">
@@ -326,7 +325,7 @@
               <div class="device-preview-header">Newsletter</div>
               <div class="device-preview-body device-preview-body--center">
                 Reste informé des prochaines sorties, fonctionnalités et mises à
-                jour Onygo.
+                jour Ynot.
               </div>
             </div>
           </div>
@@ -340,12 +339,11 @@
     <footer>
       <div class="wrap foot">
         <div class="brand">
-          <div class="logo" aria-hidden="true"></div>
-          <div class="wordmark">Onygo</div>
+          <img class="logo" src="{{ asset('ynot-logo.png') }}?v=20260512-2" alt="Logo Ynot" />
         </div>
 
         <small>
-          © <span id="y"></span> Onygo. Tous droits réservés •
+          © <span id="y"></span> Ynot. Tous droits réservés •
           <a href="#">Confidentialité</a> •
           <a href="#">Conditions</a>
         </small>

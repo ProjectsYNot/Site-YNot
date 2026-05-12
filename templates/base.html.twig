@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}Onygo{% endblock %}</title>
+  <title>{% block title %}Ynot{% endblock %}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,12 +12,14 @@
 <body id="top">
 <header>
   <div class="wrap nav">
-    <a class="brand" href="{{ path('site_index') }}#top">Onygo</a>
+    <a class="brand" href="{{ path('site_index') }}#top">
+      <img class="logo" src="{{ asset('ynot-logo.png') }}?v=20260512-2" alt="Logo Ynot">
+    </a>
     <nav>
       <a href="{{ path('site_index') }}#features">Fonctionnalités</a>
       <a href="{{ path('site_index') }}#decouvrir">Activités</a>
       <a href="{{ path('site_team') }}">Notre équipe</a>
-      <a class="btn btn-primary" href="https://epsteinexposed.com/">Télécharger l'app</a>
+      <a class="btn btn-primary" href="{{ path('site_beta') }}">Télécharger l'app</a>
     </nav>
   </div>
 </header>
@@ -26,8 +28,10 @@
 
 <footer>
   <div class="wrap foot">
-    <div class="brand">Onygo</div>
-    <small>© {{ "now"|date("Y") }} Onygo. Tous droits réservés.</small>
+    <div class="brand">
+      <img class="logo" src="{{ asset('ynot-logo.png') }}?v=20260512-2" alt="Logo Ynot">
+    </div>
+    <small>© {{ "now"|date("Y") }} Ynot. Tous droits réservés.</small>
   </div>
 </footer>
 </body>

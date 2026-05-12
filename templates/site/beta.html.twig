@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ynot - Version beta</title>
+    <meta
+      name="description"
+      content="La version beta de l'application Ynot arrive bientot."
+    />
+    <link rel="stylesheet" href="{{ asset('style.css') }}?v=20260512-3" />
+    <style>
+      .beta-wrap {
+        min-height: 70vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+      }
+
+      .beta-card {
+        width: min(680px, 92%);
+        background: #fff;
+        border-radius: 20px;
+        padding: 36px 26px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+      }
+
+      .beta-card h1 {
+        margin: 0 0 10px;
+      }
+
+      .beta-card p {
+        margin: 0 0 22px;
+        color: #5e5e5e;
+      }
+    </style>
+  </head>
+  <body id="top">
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="{{ path('site_index') }}#top">
+          <img class="logo" src="{{ asset('ynot-logo.png') }}?v=20260512-2" alt="Logo Ynot" />
+        </a>
+      </div>
+    </header>
+
+    <main class="beta-wrap">
+      <section class="beta-card" aria-live="polite">
+        <div class="kicker">ynot</div>
+        <h1>La version beta arrive bientot</h1>
+        <p>
+          Merci pour votre interet. L'application est en preparation et sera
+          disponible tres prochainement.
+        </p>
+        <a class="btn btn-primary" href="{{ path('site_index') }}#top">Retour a l'accueil</a>
+      </section>
+    </main>
+  </body>
+</html>

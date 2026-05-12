@@ -18,4 +18,10 @@ final class SiteController extends AbstractController
     {
         return $this->render('site/team.html.twig');
     }
+
+    #[Route('/beta', name: 'site_beta')]
+    public function beta(): Response
+    {
+        return $this->render('site/beta.html.twig');
+    }
 }

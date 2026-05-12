@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Onygo - Notre équipe</title>
+    <title>Ynot - Notre équipe</title>
     <meta
       name="description"
-      content="Découvre l'équipe Onygo derrière le site vitrine et le projet."
+      content="Découvre l'équipe Ynot derrière le site vitrine et le projet."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{ asset('style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('style.css') }}?v=20260512-3" />
 
     <style>
       body {
@@ -161,25 +161,24 @@
     <header>
       <div class="wrap nav">
         <a class="brand" href="{{ path('site_index') }}#top">
-          <div class="logo" aria-hidden="true"></div>
-          <div class="wordmark">Onygo</div>
+          <img class="logo" src="{{ asset('ynot-logo.png') }}?v=20260512-2" alt="Logo Ynot" />
         </a>
 
         <nav class="nav-links" aria-label="navigation principale">
           <a href="{{ path('site_index') }}#features">Fonctionnalités</a>
           <a href="{{ path('site_index') }}#decouvrir">Activités</a>
           <a href="{{ path('site_team') }}">Équipe</a>
-          <a href="https://epsteinexposed.com/" class="btn btn-primary">Télécharger l'app</a>
+          <a href="{{ path('site_beta') }}" class="btn btn-primary">Télécharger l'app</a>
         </nav>
       </div>
     </header>
 
     <section class="team-hero">
       <div class="wrap hero-inner">
-        <div class="kicker">onygo team</div>
+        <div class="kicker">ynot team</div>
         <h1>Notre équipe</h1>
         <p class="hero-sub">
-          Une équipe engagée qui conçoit Onygo pour rendre le sport plus simple,
+          Une équipe engagée qui conçoit Ynot pour rendre le sport plus simple,
           social et accessible.
         </p>
       </div>
@@ -264,12 +263,11 @@
     <footer>
       <div class="wrap foot">
         <div class="brand">
-          <div class="logo" aria-hidden="true"></div>
-          <div class="wordmark">Onygo</div>
+          <img class="logo" src="{{ asset('ynot-logo.png') }}?v=20260512-2" alt="Logo Ynot" />
         </div>
 
         <small>
-          © {{ "now"|date("Y") }} Onygo. Tous droits réservés •
+          © {{ "now"|date("Y") }} Ynot. Tous droits réservés •
           <a href="#">Confidentialité</a> •
           <a href="#">Conditions</a>
         </small>
