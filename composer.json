@@ -85,7 +85,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "serve:lan": "symfony server:start --allow-all-ip"
     },
     "conflict": {
         "symfony/symfony": "*"
